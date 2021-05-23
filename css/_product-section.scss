@@ -1,0 +1,180 @@
+.product-section {
+    padding-top: 180px;
+    padding-bottom: 50px;
+    @include for-max-574 {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    .fish-top {
+        position: absolute;
+        top: -1140px;
+    }
+    .fish-bottom {
+        position: absolute;
+        top: 400px;
+        right: 0;
+    }
+    .fish-bottom-2 {
+        position: absolute;
+        top: 400px;
+    }
+}
+
+// underline
+.under-line {
+    margin-top: 200px;
+    &__long-line {
+        height: 2px;
+        width: 100%;
+        background: $border-bg;
+    }
+}
+
+// popular product
+.popular-product {
+    padding-top: 100px;
+    @include for-max-574 {
+        padding-top: 50px;
+    }
+    &__card {
+        &__img {
+            background: url(../img/product-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+.popular-product .grid,
+.product-name-section .grid {
+    padding-top: 80px;
+    @include for-max-574 {
+        padding-top: 50px;
+    }
+}
+
+// .product-name-section
+.product-name-section {
+    padding-top: 120px;
+    @include for-max-574 {
+        padding-top: 50px;
+    }
+}
+
+// product-details-section
+.product-details-section {
+    padding-top: 100px;
+    @include for-max-574 {
+        padding-top: 50px;
+    }
+    &__img {
+        background: url(../img/iceland.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 515px;
+    }
+    .line {
+        width: 100px;
+        height: 2px;
+        background: $border-bg;
+        display: block;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+    .border-bottom {
+        border-bottom: 2px solid $underline;
+        padding-bottom: 50px;
+    }
+}
+
+.product-description {
+    max-width: 550px;
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 42px;
+    color: $text-light-black;
+}
+
+// cateegory
+.product-category {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 50px;
+        p {
+            color: $brown;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        &.rejected {
+            p {
+                color: $rejected;
+            }
+        }
+    }
+}
+
+.correct,
+.not-correct {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.correct {
+    border: 2px solid $success;
+    &::after {
+        border: solid $success;
+        border-width: 0 0px 3px 3px;
+        -webkit-transform: rotate( -45deg);
+        transform: rotate( -45deg);
+        background: transparent;
+        width: 13px;
+        height: 7px;
+        content: '';
+        position: absolute;
+        top: 8px;
+    }
+}
+
+.not-correct {
+    border: 2px solid $rejected;
+    &::after,
+    &::before {
+        content: "";
+        width: 14px;
+        height: 3px;
+        background: $rejected;
+        display: block;
+        position: absolute;
+        left: 6px;
+    }
+    &::after {
+        transform: rotate( 45deg);
+    }
+    &::before {
+        transform: rotate( 135deg);
+    }
+}
+
+// other-product
+.other-product {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    @include for-max-574 {
+        padding-top: 50px;
+    }
+    &-des {
+        max-width: 845px;
+        color: #5A718B;
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+}

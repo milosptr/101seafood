@@ -1,0 +1,107 @@
+.display-section {
+    padding-top: 170px;
+    position: relative;
+    @include for-max-1019 {
+        padding-top: 50px;
+    }
+    &__content {
+        &__display-image {
+            background: url(../img/display-bg.png);
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: cover;
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            @include for-max-1399 {
+                height: 490px;
+            }
+            @include for-max-1279 {
+                height: 400px;
+            }
+            @include for-max-1019 {
+                height: 576px;
+            }
+            @include for-max-767 {
+                height: 476px;
+            }
+            @include for-max-574 {
+                flex-direction: column;
+                height: initial;
+            }
+            img {
+                width: 95%;
+                margin-left: auto;
+                position: absolute;
+                top: -100px;
+                right: -25px;
+                @include for-max-574 {
+                    position: initial;
+                }
+            }
+            p {
+                position: relative;
+                margin-top: auto;
+                color: $brown;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                font-family: 'Libre Baskerville', serif;
+                bottom: 24px;
+                @include for-max-574 {
+                    margin-top: 55px;
+                }
+            }
+        }
+        &:first-of-type {
+            h1 {
+                max-width: 502px;
+                letter-spacing: -0.03em;
+                margin-bottom: 24px;
+            }
+            p {
+                max-width: 426px;
+            }
+        }
+        &:last-of-type {
+            @include for-max-1019 {
+                margin-top: 135px;
+            }
+            @include for-max-574 {
+                margin-top: 20px;
+            }
+        }
+    }
+    .fish {
+        position: absolute;
+        top: 180px;
+        z-index: -1;
+        &__two {
+            position: absolute;
+            top: 100px;
+            right: 0;
+        }
+    }
+    .line {
+        margin-top: 135px;
+        @include for-max-574 {
+            margin-top: 50px;
+        }
+    }
+}
+
+// line
+.line {
+    max-width: 558px;
+    height: 2px;
+    background: $underline;
+    margin: auto;
+}
+
+.font-libre {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}

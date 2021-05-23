@@ -1,0 +1,88 @@
+.about-us-section {
+    padding: 100px 0;
+    @include for-max-574 {
+        padding: 50px 0;
+    }
+    .under-line {
+        max-width: 845px;
+        margin: auto;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        position: relative;
+        @include for-max-574 {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        &::before {
+            width: 400px;
+            height: 2px;
+            background: $underline;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            margin: auto;
+            left: 0;
+            right: 0;
+            @include for-max-574 {
+                width: 100%;
+            }
+        }
+    }
+    &__des {
+        color: $text-light-black;
+        font-size: 24px;
+    }
+    p,
+    h6 {
+        max-width: 780px;
+        margin: auto;
+        text-align: center;
+    }
+    h6 {
+        color: $brown-light;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        @include for-max-574 {
+            margin-bottom: 30px;
+        }
+    }
+    &__fish__left,
+    &__fish__right {
+        position: absolute;
+    }
+    &__fish__right {
+        right: 0;
+        top: -72px;
+    }
+    &__fish__left {
+        top: -100px;
+    }
+    &.sertificates {
+        padding-top: 0;
+        position: relative;
+        @include for-max-574 {
+            padding-bottom: 0;
+        }
+        .under-line {
+            margin-bottom: 70px;
+            ;
+        }
+        .about-bottom-fiah-left {
+            position: absolute;
+            top: 200px;
+        }
+        .about-bottom-fiah-right {
+            position: absolute;
+            right: 0;
+            top: 130px;
+        }
+        .about-line {
+            border-bottom: 2px solid $underline;
+            padding-bottom: 200px;
+            @include for-max-574 {
+                padding-bottom: 50px;
+            }
+        }
+    }
+}

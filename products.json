@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Atlantic Cod",
+    "slug": "atlantic-cod",
+    "species": "ground-fish",
+    "description": "The Atlantic cod is one of the best-studied marine fishes and most well known stories of marine fisheries management in the world. It’s common size ranges between 40-90 cm and common weight is around 2-10 kg. The species is parcticularly well known for its white, flaky flesh.",
+    "size": "40-90cm",
+    "weight": "2-10kg",
+    "msc": true,
+    "fresh": true,
+    "frozen": true,
+    "salted": false,
+    "fas": true,
+    "low-season": "June - August",
+    "heigh-season": "September - May"
+  }
+]

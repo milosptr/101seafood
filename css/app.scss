@@ -1,0 +1,68 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+// variables
+@import "../css/variables";
+//media query
+@import "../css/mediaquery";
+// navbar
+@import "../css/nav";
+// Display section
+@import "../css/display-section";
+// Map section
+@import "../css/map-section";
+// Product section
+@import "../css/product-section";
+// About us
+@import "../css/about-us";
+// Footer
+@import "../css/footer";
+// button
+@import "../css/button";
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 48px;
+    @include for-max-1000 {
+        font-size: 28px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.fonts-source {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+// color
+.text-light-black {
+    color: $text-light-black;
+}
+
+.text-black {
+    color: $text-black;
+}
+
+.text-footer {
+    color: $footer-text;
+}
+
+.text-brown-light {
+    color: $brown-light;
+}
+
+// font-size
+.f-s-22 {
+    font-size: 22px;
+}

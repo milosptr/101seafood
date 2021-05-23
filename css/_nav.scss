@@ -1,0 +1,37 @@
+#menu-toggle:checked+#menu {
+    display: block;
+}
+
+.header {
+    position: relative;
+    z-index: 99;
+    &__nav-list {
+        li {
+            a {
+                color: $nav-clr;
+                text-transform: uppercase;
+                &.active {
+                    color: $text-black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .container {
+        border-bottom: 2px solid $border-bg;
+        padding: 20px 0;
+        @include for-max-574 {
+            padding: 20px;
+        }
+    }
+}
+
+// container
+.container {
+    @include for-min-1500 {
+        max-width: 1440px !important;
+    }
+    @include for-max-574 {
+        padding: 0 20px;
+    }
+}

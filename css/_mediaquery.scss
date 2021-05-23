@@ -1,0 +1,145 @@
+//  min width
+@mixin for-min-575 {
+    @media (min-width: 575px) {
+        @content;
+    }
+}
+
+@mixin for-min-768 {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin for-min-992 {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin for-min-1200 {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin for-min-1400 {
+    @media (min-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin for-min-1500 {
+    @media (min-width: 1500px) {
+        @content;
+    }
+}
+
+@mixin for-min-1600 {
+    @media (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin for-min-1700 {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+@mixin for-min-1800 {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+@mixin for-min-1850 {
+    @media (min-width: 1850px) {
+        @content;
+    }
+}
+
+@mixin for-min-2200 {
+    @media (min-width: 2200px) {
+        @content;
+    }
+}
+
+@mixin for-min-2500 {
+    @media (min-width: 2500px) {
+        @content;
+    }
+}
+
+// max width
+@mixin for-max-400 {
+    @media (max-width: 400px) {
+        @content;
+    }
+}
+
+@mixin for-max-480 {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin for-max-574 {
+    @media (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin for-max-590 {
+    @media (max-width: 590px) {
+        @content;
+    }
+}
+
+@mixin for-max-767 {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin for-max-900 {
+    @media (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin for-max-991 {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin for-max-1000 {
+    @media (max-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin for-max-1019 {
+    @media (max-width: 1019px) {
+        @content;
+    }
+}
+
+@mixin for-max-1199 {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin for-max-1279 {
+    @media (max-width: 1279px) {
+        @content;
+    }
+}
+
+@mixin for-max-1399 {
+    @media (max-width: 1399px) {
+        @content;
+    }
+}
