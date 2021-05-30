@@ -695,3 +695,12 @@ h6 {
   font-size: 22px;
 }
 /*# sourceMappingURL=style.css.map */
+
+.email-sent {
+  border: 2px solid #38C172;
+  background: #A2F5BF;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+}
