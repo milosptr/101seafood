@@ -94,11 +94,48 @@
     </div>
     <!-- footer -->
     <?php include './common/footer.php'; ?>
-
+    <div id="popup-modal" class="fixed left-0 top-0 w-full h-screen flex items-center justify-center z-101">
+      <div class="bg-black fixed left-0 top-0 w-full h-screen opacity-50" onclick="removePopup()"></div>
+      <div class="relative bg-white w-full sm:w-1/3 rounded z-102">
+        <div id="close-popup" onclick="removePopup()">&times;</div>
+        <img src="/seafood.jpeg" width="100%" alt="seafood" />
+      </div>
+    </div>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- alpine js -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script>
+      function removePopup() {
+        document.getElementById('popup-modal').remove()
+      }
+    </script>
+    <style>
+      #close-popup {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 40px;
+        border-radius: 50%;
+        background: #fff;
+        color: #111;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        margin: 6px;
+        cursor: pointer;
+        user-select: none;
+      }
+      .z-101 {
+        z-index: 101;
+      }
+      .z-102 {
+        z-index: 102;
+      }
+    </style>
 </body>
 
 </html>

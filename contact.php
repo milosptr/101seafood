@@ -45,7 +45,6 @@
               <textarea class="w-full" rows="5" name="message" placeholder="Your message *"></textarea>
             </div>
             <?php
-              session_start();
               if(!empty($_SESSION['message'])) {
                 ?>
                 <div class="email-sent">
