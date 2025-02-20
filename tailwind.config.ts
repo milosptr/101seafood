@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        asgard: ['"Asgard Trial Fit"', "sans-serif"],     // normal, thin, medium, bold, regular weights
+        asgardFat: ['"Asgard Trial Fit Fat"', "sans-serif"], // fat weight (900)
+      },
     },
   },
   plugins: [],
