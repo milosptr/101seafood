@@ -10,7 +10,7 @@ export default function Home() {
               <span key={word} className="block">{word}</span>
             ))}
           </h1>
-          <p className={'text-center text-xl lg:text-3xl mt-24 font-mono font-medium'}>This site is under construction</p>
+          <p className={'text-center text-xl lg:text-3xl mt-12 lg:mt-24 font-mono font-medium'}>This site is under construction</p>
           <p className={'text-center text-xl lg:text-3xl mt-12 font-mono font-medium'}>Contact us at:</p>
           <p className={'flex flex-col gap-4 text-center text-xl lg:text-3xl mt-12 font-mono font-semibold'}>
             <a href={'mailto:steini@101seafood.is'} className={'text-black'}>steini@101seafood.is</a>
